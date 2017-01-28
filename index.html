@@ -6,6 +6,10 @@
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
+
+    <!-- Animations controller -->
+    <script src="js/animations.js"></script>
+
     <!-- Custom Theme files -->
     <link href="css/style.css" rel='stylesheet' type='text/css' />
     <!-- Custom Theme files -->
@@ -13,7 +17,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Matthew Fung, personal website" />
 
-    <!-- favicons -->
+    <!-- Animate CSS library-->
+    <link rel="stylesheet" href="css/animate.css" type='text/css' />
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
@@ -104,7 +111,7 @@
                         <div class="padbottom">
                             <h3 class="padbottom">Hey there,<br /><br />
               I'm a 3rd year student at Wilfrid Laurier University with a passion in web development and I'm always open to new ideas.</h3>
-                            <a href="#about" class="read scroll">About Me</a>
+                            <a href="#about" id="about-button" class="read scroll">About Me</a>
                         </div>
                     </div>
                 </div>
@@ -116,10 +123,10 @@
         <div class="col-md-6 about-left">
             <div id="owl-demo1" class="owl-carousel owl-carousel2">
                 <div class="item">
-                    <div class="about-left-grid">
+                    <div class="about-left-grid" style="display:none">
                         <h2>More <span>About Me</span></h2>
                         <p>
-
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
                         <ul>
                             <li><a class="a-btn-a scroll" href="#skills">My Skills</a></li>
@@ -153,7 +160,6 @@
                     </div>
 
                     <div class="col-xs-12 col-md-9 wthree_about_right_grid_right">
-                        <h4>Programming</h4>
                           <h4>Expert in:</h4>
                             <p>
                                 Python
@@ -168,22 +174,34 @@
                                 CSS
                             </p>
                             <br />
-                          <h4>Proficient in:</h4>
-                          <p>
-                              JavaScript
-                          </p>
-                          <p>
-                              SQL
-                          </p>
-                          <p>
-                              PHP
-                          </p>
-                          <p>
-                            C
-                          </p>
 
                         </div>
                     </div>
+                    <div class="col-md-6 wthree_about_right_grid padbottom marginbottom">
+
+                        <div class="col-xs-12 col-md-3 wthree_about_right_grid_left">
+                            <div class="hvr-rectangle-in">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-9 wthree_about_right_grid_right">
+                              <h4>Proficient in:</h4>
+                              <p>
+                                  JavaScript
+                              </p>
+                              <p>
+                                  SQL
+                              </p>
+                              <p>
+                                  PHP
+                              </p>
+                              <p>
+                                C
+                              </p>
+
+                            </div>
+                        </div>
                     <div class="clearfix"> </div>
                 </div>
 
@@ -237,7 +255,7 @@
 
     <!-- portfolio -->
     <div class="portfolio" id="port">
-        <div class="service-head text-center">
+        <div id="port-text" class="service-head text-center" style="display:none">
             <h3>MY <span>PORTFOLIO</span></h3>
             <span class="border"></span>
         </div>
@@ -390,7 +408,7 @@
                 <li></li>
             </ul>
             <div class="service-head one text-center">
-              <h4>Want to work together? I'd love to hear from you.</h4>
+              <h4 id="contact-text" style="display:none">Want to work together? I'd love to hear from you.</h4>
                 <h3>CONTACT <span>ME</span></h3>
                 <span class="border two"></span>
             </div>
