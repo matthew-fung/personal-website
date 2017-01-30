@@ -456,7 +456,7 @@ span.border.one:after {
 .about-right{
 	    float: left;
 	padding:0;
-	background:url(../images/pic2.jpg) no-repeat 0px 0px;
+	background:url(../images/keyboard_2.jpg) no-repeat 0px 0px;
 	min-height:580px;
 	background-size: cover;
    -o-background-size: cover;
@@ -605,8 +605,13 @@ span.border.one:after {
 	color:#fff;
 }
 
+.languages{
+    margin-bottom: 3em;
+}
+
 .languages p{
-  font-weight:bold;
+  font-size:1.3em;
+  /*font-weight:bold;*/
 }
 
 @media screen and (min-width:992px){
@@ -1087,6 +1092,9 @@ div#portfolioModal1,div#portfolioModal2,div#portfolioModal3,div#portfolioModal4,
 	    background: #f4f4f4;
 }
 
+.logos{
+  margin-bottom:3em;
+}
 .logos img{
   width:12em;
   height:auto;
@@ -1221,13 +1229,10 @@ ul.social-icons.two {
     padding: 2em;
 }
 span.border.two {
-    width: 18%;
-    background: #fff;
-    height: 1px;
-    display: block;
-    margin-top: 26px;
-    position: relative;
-    margin: 23px auto 0px;
+  background: #ffffff;
+  /* height: 1px; */
+  display: block;
+  margin-top: 26px;
 }
 span.border.two:after {
     content: ' ';
@@ -1255,7 +1260,7 @@ span.border.two:after {
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 650px;
+    min-height: 500px;
     padding:5em 0 0em 0;
 }
 .footer_top ul li{
@@ -1454,7 +1459,7 @@ span.border.two:after {
 		float: none;
 		margin-right: 0;
 		min-height: 306px;
-		margin-left: 7em;
+		margin-left: 8.7em;
 	}
 	#home {
 	   min-height: 563px;
@@ -1544,7 +1549,7 @@ span.border.two:after {
 		float: none;
 		margin-right: 0;
 		min-height: 367px;
-		margin-left: 7em;
+		margin-left: 3em;
 	}
 	.resp-tab-item {
 		margin: 0 3px;
@@ -1572,7 +1577,7 @@ span.border.two:after {
 		float: none;
 		margin-right: 0;
 		min-height: 367px;
-		margin-left: 7em;
+		margin-left: 3em;
 	}
 }
 @media(max-width:640px){
@@ -1665,7 +1670,7 @@ span.border.two:after {
 		float: none;
 		margin-right: 0;
 		min-height: 390px;
-		margin-left: 7em;
+		margin-left: 3em;
 	}
 	span.border:after {
 		height: 7px;
@@ -1720,7 +1725,7 @@ span.border.two:after {
 		float: none;
 		margin-right: 0;
 		min-height: 418px;
-		margin-left: 7em;
+		margin-left: 3em;
 	}
 }
 @media(max-width:480px){
